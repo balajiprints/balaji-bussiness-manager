@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>Cash Management</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+<div class="top-bar">
+<h1>Cash Management</h1>
+<p>Manage All Cash</p>
+</div>
+
+<div class="card">
+
+<label>Shop Cash</label>
+<input type="number" id="shopCash" placeholder="Enter Shop Cash">
+
+<label>Galla Cash</label>
+<input type="number" id="gallaCash" placeholder="Enter Galla Cash">
+
+<label>Coins</label>
+<input type="number" id="coinsCash" placeholder="Enter Coins Amount">
+
+<label>Home Cash</label>
+<input type="number" id="homeCash" placeholder="Enter Home Cash">
+
+<button onclick="saveCash()">
+Save Cash
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Total Cash</h3>
+
+<h2 id="totalCashDisplay">
+₹0
+</h2>
+
+</div>
+
+</div>
+
+<script src="storage.js"></script>
+<script src="cash.js"></script>
+
+</body>
+</html>
