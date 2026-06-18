@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>IDs</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+<body>
+
+<div class="dashboard">
+
+<div class="top-bar">
+<h1>Business IDs</h1>
+<p>E-Mitra, AEPS, Travel etc.</p>
+</div>
+
+<div class="card">
+
+<label>ID Name</label>
+
+<input
+type="text"
+id="idName"
+placeholder="Ex. E-Mitra ID 1">
+
+<label>ID Type</label>
+
+<select id="idType">
+<option>E-Mitra</option>
+<option>AEPS</option>
+<option>Travel</option>
+<option>IRCTC</option>
+<option>Other</option>
+</select>
+
+<label>Current Balance</label>
+
+<input
+type="number"
+id="idBalance"
+placeholder="Enter Balance">
+
+<button onclick="saveId()">
+Save ID
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Total IDs Balance</h3>
+
+<h2 id="totalIdsBalance">
+₹0
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>All IDs</h3>
+
+<div id="idList">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="storage.js"></script>
+<script src="ids.js"></script>
+
+</body>
+</html>
