@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Udhaar Management</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+<div class="top-bar">
+<h1>Udhaar Management</h1>
+<p>Manage All Pending Payments</p>
+</div>
+
+<div class="card">
+
+<label>Name</label>
+<input
+type="text"
+id="udhaarName"
+placeholder="Customer/Supplier Name">
+
+<label>Reason</label>
+<input
+type="text"
+id="udhaarReason"
+placeholder="Notebook, Print, Money etc">
+
+<label>Amount</label>
+<input
+type="number"
+id="udhaarAmount"
+placeholder="Enter Amount">
+
+<label>Type</label>
+<select id="udhaarType">
+<option value="receive">
+Mujhe Lena Hai
+</option>
+
+<option value="pay">
+Mujhe Dena Hai
+</option>
+</select>
+
+<button onclick="saveUdhaar()">
+Save
+</button>
+
+</div>
+
+<div class="card">
+
+<h3>Total Udhaar</h3>
+
+<h2 id="totalUdhaar">
+₹0
+</h2>
+
+</div>
+
+<div class="card">
+
+<h3>Udhaar List</h3>
+
+<div id="udhaarList">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="storage.js"></script>
+<script src="udhaar.js"></script>
+
+</body>
+</html>
