@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>UPI QR</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <div class="top-bar">
+    <h1>UPI QR Management</h1>
+    <p>Manage QR Payments</p>
+  </div>
+
+  <div class="card">
+
+    <label>QR Name</label>
+    <input type="text" id="upiName"
+           placeholder="PhonePe QR, Paytm QR etc">
+
+    <label>Amount Received</label>
+    <input type="number" id="upiAmount"
+           placeholder="Enter Amount">
+
+    <button onclick="saveUpi()">
+      Save Payment
+    </button>
+
+  </div>
+
+  <div class="card">
+    <h3>Total Pending UPI</h3>
+    <h2 id="upiTotal">₹0</h2>
+  </div>
+
+  <div class="card">
+    <h3>UPI Payments</h3>
+    <div id="upiList"></div>
+  </div>
+
+</div>
+
+<script src="storage.js"></script>
+<script src="upi.js"></script>
+
+</body>
+</html>
