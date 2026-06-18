@@ -4,9 +4,7 @@ function saveExpense() {
     document.getElementById("expenseCategory").value;
 
   const amount =
-    Number(
-      document.getElementById("expenseAmount").value
-    );
+    Number(document.getElementById("expenseAmount").value);
 
   if (!amount || amount <= 0) {
     alert("Enter valid amount");
@@ -25,7 +23,5 @@ function saveExpense() {
 
   alert("Expense Saved");
 
-  document.getElementById(
-    "expenseAmount"
-  ).value = "";
+  window.location.href = "dashboard.html";
 }
