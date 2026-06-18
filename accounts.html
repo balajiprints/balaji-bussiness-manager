@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1">
+
+  <title>Accounts</title>
+  <link rel="stylesheet"
+        href="style.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+  <div class="top-bar">
+    <h1>Bank Accounts</h1>
+    <p>Add Your Accounts</p>
+  </div>
+
+  <div class="card">
+
+    <label>Account Name</label>
+
+    <input
+      type="text"
+      id="accountName"
+      placeholder="Current Account, BC Account etc"
+    >
+
+    <label>Balance</label>
+
+    <input
+      type="number"
+      id="accountBalance"
+      placeholder="Enter Balance"
+    >
+
+    <button onclick="saveAccount()">
+      Save Account
+    </button>
+
+  </div>
+
+  <div class="card">
+
+    <h3>Total Account Balance</h3>
+
+    <h2 id="totalBalance">
+      ₹0
+    </h2>
+
+  </div>
+
+  <div class="card">
+
+    <h3>Accounts List</h3>
+
+    <div id="accountList">
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="storage.js"></script>
+<script src="accounts.js"></script>
+
+</body>
+</html>
