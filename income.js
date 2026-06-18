@@ -4,9 +4,7 @@ function saveIncome() {
     document.getElementById("incomeCategory").value;
 
   const amount =
-    Number(
-      document.getElementById("incomeAmount").value
-    );
+    Number(document.getElementById("incomeAmount").value);
 
   if (!amount || amount <= 0) {
     alert("Enter valid amount");
@@ -25,7 +23,5 @@ function saveIncome() {
 
   alert("Income Saved");
 
-  document.getElementById(
-    "incomeAmount"
-  ).value = "";
+  window.location.href = "dashboard.html";
 }
